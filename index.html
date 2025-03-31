@@ -32,7 +32,7 @@
     <script>
         async function fetchData() {
             try {
-                const response = await fetch('http://192.168.1.197:8080/api/dados3D');
+                const response = await fetch('http://192.168.1.197:8080');
                 const data = await response.json();
                 createPoints(data);
             } catch (error) {
